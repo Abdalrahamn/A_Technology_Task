@@ -1,0 +1,76 @@
+.main-ticket {
+  width: 408px !important;
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  background-image: url("/assets/linearBg.svg");
+
+  .ticket-url {
+    width: 226.2px;
+    height: 42px;
+    border-radius: 8.32px;
+    border: 0.83px;
+  }
+  .ticket-title {
+    font-size: 14px;
+  }
+  .card-body {
+    padding: 0px;
+  }
+
+  .title-text {
+    width: fit-content;
+  }
+
+  .sharing:hover .img {
+    filter: invert(100%);
+  }
+
+  .l {
+    color: #495057;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+}
+
+.main-ticket::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f8f8f9;
+  top: 55%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.main-ticket::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #f8f8f9;
+  top: 55%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.main-ticket .line:after {
+  content: "";
+  width: 95%;
+  position: absolute;
+  border-bottom: 2px dashed white;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1024px) {
+  .main-ticket {
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+}

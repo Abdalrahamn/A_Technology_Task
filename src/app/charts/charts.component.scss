@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.mychart {
+  position: relative;
+}
+.chart-info {
+  position: absolute;
+  z-index: 11;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0 6px 2px;
+  display: flex;
+  width: 243px !important;
+  height: 36px !important;
+  top: 15px;
+  right: 30px;
+}
+
+.chart-info-dropdown {
+  position: absolute;
+  z-index: 11;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0 6px 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 67.37px !important;
+  height: 30.28px !important;
+  top: 10px;
+  left: 30px;
+  border-radius: 8.07px;
+  border: 1px solid #e8e8e8;
+  background-color: #f8f8f9;
+}
+
+.font-size-14 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12.9px;
+}
+
+::ng-deep foreignObject {
+  width: 50% !important;
+}
+
+::ng-deep .apexcharts-toolbar {
+  display: none !important;
+}
+
+::ng-deep .apexcharts-yaxis-label , .apexcharts-yaxis-texts-g {
+  display: none !important;
+}
+
+
+@media (max-width: 1024px) {
+  .mychart {
+    width: 100% !important;
+    margin: 0 auto;
+    margin-inline: 0 !important;
+  }
+}

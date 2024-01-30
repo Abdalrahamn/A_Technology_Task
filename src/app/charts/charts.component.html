@@ -1,0 +1,29 @@
+<div
+  class="rounded ms-xl-5 ms-5 mychart pt-5 pe-4"
+  style="background-color: rgb(255, 255, 255)"
+>
+  <div>
+    <apx-chart
+      [series]="chartOptions.series!"
+      [chart]="chartOptions.chart!"
+      [xaxis]="chartOptions.xaxis!"
+      [title]="chartOptions.title!"
+    >
+    </apx-chart>
+
+    <div class="chart-info d-flex flex-column">
+      <p class="font-size-14">إحصائيات إستخدام القسيمة</p>
+      <p class="text-muted">
+        <img src="../../assets/Vectorarrow.svg" class="pe-1" alt="" /> يوليو 05,
+        2023 - 05 أغسطس , 2023
+      </p>
+    </div>
+
+    <div class="chart-info-dropdown pointer">
+      <div>
+        <img class="pe-1" src="../../assets/Vectorarrow.svg" alt="">
+          سنويا
+      </div>
+    </div>
+  </div>
+</div>
